@@ -1,0 +1,108 @@
+
+<html lang="en">
+    <head>
+        <title>Form page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <style>
+            .container{
+                width: 30%;
+                border: 1px solid black;
+                margin : auto;
+                padding: 20px;
+                font-size: 20px;
+                
+            }
+            
+            #form_id table tr td input{
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class =" container" >
+            <h1>My Form</h1>
+            <form id="form_id" action="RegisterServlet" method="post">
+                <table>
+                    <tr>
+                        <td>
+                            ENTER YOUR NAME
+                        </td>
+                        <td>
+                            <input type="TEXT" name="USER NAME" placeholder="ENTER NAME"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ENTER YOUR PASSWORD
+                        </td>
+                        <td>
+                            <input type="PASSWORD" name="USER_PASSWORD" placeholder="ENTER PASSWORD"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ENTER YOUR EMAIL
+                        </td>
+                        <td>
+                            <input type="email" name="USER_EMAIL" placeholder="ENTER EMAIL"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            SELECT GENDER
+                        </td>
+                        <td>
+                            <input type="radio" name="USER_GENDER" value="male">MALE &nbsp; &nbsp; 
+                            <input type="radio" name="USER_GENDER" value="female">FEMALE &nbsp; &nbsp; 
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            SELECT YOUR COURSE
+                        </td>
+                        <td>
+                            <select name="USER_COURSE" >
+                                <option value="JAVA">JAVA</option>
+                                <option value="SPRIN">SPRING</option>
+                                <option value="ANDROID">ANDROID</option>
+                                <option value="PYTHON">PYTHON</option>
+                                <option value="WEB">WEB</option>
+                                <option value="PHP">PHP</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td style="text-align: right"> 
+                            <input type="checkbox" value ="checked" name="CONDITION"/>
+                        </td>
+                        <td>
+                            AGREE TERM AND CONDITION
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td> </td>
+                        <td>
+                         <button type="submit">REGISTOR</button>
+                         <button type="reset">RESET</button>
+                        </td>
+                    </tr>
+                    
+                    
+                </table>
+                
+                
+                
+                
+            </form>
+            
+        </div>
+    </body>
+</html>
